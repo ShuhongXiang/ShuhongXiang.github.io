@@ -13,17 +13,20 @@ This is my personal website and
 
 
 
-## Link to my Github ❤.
+# Link to my Github ❤.
 
 * [Shuhong's Github](https://github.com/ShuhongXiang)
 
-## My contact information ❤.
+# My contact information ❤.
 
 Email : sxian1288@gmail.com
 
-## My Resume ❤
+# My Resume ❤.
 
+# About Me ❤.
 
-## Thanks for reaching me !
+[Funfact about me](about.html)
+
+# Thanks for reaching me !
 
 ![](images/cat.JPG)
