@@ -8,14 +8,12 @@ output:
 
 # Welcome My Website ❤.
 
+This is also  my solutions for p8105 HW4.
+
 # My Resume ❤.
 
-![](CV/CV_ Updated.docx)
-
-# Link to my Github ❤.
-
-* [Shuhong's Github](https://github.com/ShuhongXiang)
+*![Resume](CV/_CVpdf.pdf)
 
 # Thanks for reaching me !
 
-![](images/cat.JPG)
+<img src= "images/cat.JPG" style = "width:50%">
