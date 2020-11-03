@@ -4,28 +4,17 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 # Welcome My Website ❤.
 
-This is my personal website and 
+# My Resume ❤.
 
-
+![](CV/CV_ Updated.docx)
 
 # Link to my Github ❤.
 
 * [Shuhong's Github](https://github.com/ShuhongXiang)
-
-# My contact information ❤.
-
-Email : sxian1288@gmail.com
-
-# My Resume ❤.
-
-# About Me ❤.
-
-[Funfact about me](about.html)
 
 # Thanks for reaching me !
 
