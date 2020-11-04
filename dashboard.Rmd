@@ -29,7 +29,6 @@ korean_rest =
   filter (cuisine_description == "Korean") %>%
   mutate(cuisine_description = as_factor(cuisine_description)) %>%
   mutate(critical_flag = as_factor(critical_flag)) %>%
-  mutate(violation_description = as.numeric(violation_description)) %>%
   mutate(inspection_date = as_date(inspection_date))
 korean_rest
 ```

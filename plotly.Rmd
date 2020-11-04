@@ -6,36 +6,28 @@ output:
     toc_float: true
 ---
 
-```{r, include=FALSE}
-knitr::opts_chunk$set(fig.path='Figs/',
-                      echo=FALSE, warning=FALSE, message=FALSE)
-```
-
-
 ```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
 library(lubridate)
+library(htmlwidgets)
+knitr::opts_chunk$set(echo=FALSE, warning=FALSE, message=FALSE)
 ```
 
 I want to know about the Korean restaurant' circumstance in NYC so I choose to analyze the NYC Restaurant Inspection Results dataset from the p8105.datasets.  
 
-```{r , include=FALSE}
- data("rest_inspec") 
-```
-
 ```{r}
+data("rest_inspec") 
 korean_rest = 
   rest_inspec %>%
   select(boro, cuisine_description, critical_flag, score, grade, violation_description, inspection_date) %>%
   filter (cuisine_description == "Korean") %>%
   mutate(cuisine_description = as_factor(cuisine_description)) %>%
-  mutate(critical_flag = as_factor(critical_flag)) %>%
-  mutate(violation_description = as.numeric(violation_description)) %>%
   mutate(inspection_date = as_date(inspection_date))
 korean_rest
 ```
+## Chart A
 
 ### Use the scatterplot to track the score of of Korean resruruant in NYC over time:
 
@@ -52,7 +44,9 @@ layout(
   )
 ```
 
-The score of Korean restaurants gradually increase over time:
+The score of Korean restaurants gradually increase over time.
+
+## Chart B
 
 ### To be more clear about the median, mean and Q1Q3 of the score, I made the boxlot:
 
@@ -66,7 +60,10 @@ layout(
     title = "Score of Korean Resturuant in Diffreent Boros of NYC"
     )
 ```
+
 Since only seven Korean restaurant in Bronx in our dataset, the results may not be accurate. But we still can see the the score of Korean restaurants in Manhattan is slightly better than the Korean restaurants in other boros. 
+
+## Chart C
 
 ### Then, I used the bar plot to track the number of Korean Resturants in each boro: 
  
@@ -77,6 +74,4 @@ korean_rest %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
 ```
 
-We can see only 7 Korean restaurants in Bronx. The main Korean restaurants are in Queens and Manhattan. 
-
-
+We can see only 7 Korean restaurants in Bronx. The main Korean restaurants are in Queens and Manhattan.
