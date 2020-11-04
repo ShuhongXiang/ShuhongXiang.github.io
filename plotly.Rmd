@@ -10,11 +10,23 @@ output:
 library(tidyverse)
 library(p8105.datasets)
 library(plotly)
+library(lubridate)
 ```
 
-I want to know about the restaurant circumstance in NYC so I choose to analyze the NYC Restaurant Inspection Results dataset from the p8105.datasets.  
+I want to know about the Korean restaurant' circumstance in NYC so I choose to analyze the NYC Restaurant Inspection Results dataset from the p8105.datasets.  
+
+```{r , include=FALSE}
+ data("rest_inspec") 
+```
 
 ```{r}
-   
+korean_rest = 
+  rest_inspec %>%
+  select(boro, cuisine_description, critical_flag, score, grade, zipcode, inspection_date) %>%
+  filter (cuisine_description == "Korean") %>%
+  mutate(cuisine_description = as_factor(cuisine_description)) %>%
+  mutate(critical_flag = as_factor(critical_flag)) %>%
+  mutate(inspection_date = as_date(inspection_date))
+korean_rest
 ```
 

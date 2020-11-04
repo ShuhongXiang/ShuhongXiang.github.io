@@ -381,7 +381,29 @@ div.tocify {
 </div>
 
 
-<p>I want to know about the restaurant circumstance in NYC so I choose to analyze the NYC Restaurant Inspection Results dataset from the p8105.datasets.</p>
+<p>I want to know about the Korean restaurant’ circumstance in NYC so I choose to analyze the NYC Restaurant Inspection Results dataset from the p8105.datasets.</p>
+<pre class="r"><code>korean_rest = 
+  rest_inspec %&gt;%
+  select(boro, cuisine_description, critical_flag, score, grade, zipcode, inspection_date) %&gt;%
+  filter (cuisine_description == &quot;Korean&quot;) %&gt;%
+  mutate(cuisine_description = as_factor(cuisine_description)) %&gt;%
+  mutate(critical_flag = as_factor(critical_flag)) %&gt;%
+  mutate(inspection_date = as_date(inspection_date))
+korean_rest</code></pre>
+<pre><code>## # A tibble: 5,106 x 7
+##    boro     cuisine_descripti… critical_flag score grade zipcode inspection_date
+##    &lt;chr&gt;    &lt;fct&gt;              &lt;fct&gt;         &lt;int&gt; &lt;chr&gt;   &lt;int&gt; &lt;date&gt;         
+##  1 MANHATT… Korean             Critical         25 &lt;NA&gt;    10001 2015-07-17     
+##  2 MANHATT… Korean             Critical         23 &lt;NA&gt;    10001 2015-01-29     
+##  3 MANHATT… Korean             Not Critical      9 A       10001 2016-01-22     
+##  4 MANHATT… Korean             Not Critical      6 A       10001 2016-05-10     
+##  5 MANHATT… Korean             Not Critical     27 &lt;NA&gt;    10001 2017-03-16     
+##  6 MANHATT… Korean             Critical         24 &lt;NA&gt;    10001 2016-10-31     
+##  7 MANHATT… Korean             Critical         14 B       10001 2015-02-23     
+##  8 MANHATT… Korean             Critical         14 &lt;NA&gt;    10001 2015-04-07     
+##  9 MANHATT… Korean             Critical          7 A       10001 2014-12-05     
+## 10 MANHATT… Korean             Not Critical     12 A       10001 2013-10-29     
+## # … with 5,096 more rows</code></pre>
 
 
 
