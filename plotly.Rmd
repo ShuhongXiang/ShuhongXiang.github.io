@@ -77,6 +77,6 @@ korean_rest %>%
   plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
 ```
 
-We can see only 7 Korean restaurants in Bronx. The main Korean resturants are in Queens and Manhattan. 
+We can see only 7 Korean restaurants in Bronx. The main Korean restaurants are in Queens and Manhattan. 
 
 
