@@ -6,7 +6,7 @@ output:
     toc_float: true
 ---
 
-# Welcome My Website ❤.
+# Welcome to My Website ❤.
 
 You can find information about me here!
 
@@ -14,7 +14,7 @@ I love traveling, so here↓ is my picture in Cancun, Mexico with a pyramid in C
 
 <img src= "images/Mypicture.JPG" style = "width:75%">
 
-# Some Basic Information About me ❤.
+# Some Basic Information about Me ❤.
 
 I was born in Fujian, China. I went to University of New haven in New Haven, CT for my bachelor's degree in biology from August, 2015 to January, 2020. For my academic background in detail, please check my resume below!
 
@@ -22,10 +22,10 @@ I was born in Fujian, China. I went to University of New haven in New Haven, CT 
 
 [Shuhong's Resume](https://drive.google.com/file/d/1hRWuJ4YRp1EfqKDr51lkIPSzl4CFb5gE/view?usp=sharing)
 
-# Dashboard on the Korean resturants in NYC!
+# Dashboard about the Korean Resturants in NYC!
 
 I often go to NYC for finding some good restaurants in NYC. So I really care about the inspection results in NYC. Based on the NYC inspection dataset, the analysis on the Korean restaurant (my favorite food) has been put there. You can click the link here to see the graphs: [Dashboard](dashboard.html)
 
-# Thanks for reaching me !
+# Thanks for Reaching Me !
 
 <img src= "images/cat.JPG" style = "width:50%">
