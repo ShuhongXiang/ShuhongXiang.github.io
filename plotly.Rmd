@@ -71,7 +71,11 @@ Since only seven Korean restaurant in Bronx in our dataset, the results may not 
 korean_rest %>% 
   count(boro) %>% 
   mutate(boro= fct_reorder(boro, n)) %>% 
-  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")
+  plot_ly(x = ~boro, y = ~n, color = ~boro, type = "bar", colors = "viridis")%>%
+layout(
+    xaxis = list(title = "Boro"),
+    title = "Number of Korean Resturuant in Diffreent Boros of NYC"
+    )
 ```
 
 We can see only 7 Korean restaurants in Bronx. The main Korean restaurants are in Queens and Manhattan.
