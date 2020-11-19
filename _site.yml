@@ -3,15 +3,12 @@ output_dir: "."
 navbar:
   title: "Home"
   right:
-    - text: "My Funfact"
-      href: about.html
     - icon: fa-envelope fa-lg
       href: mailto:<sxian1288@gmail.com>
-    - icon: fa-github fa-lg
-      href: http://github.com/ShuhongXiang/
     - icon: fab fa-linkedin
       href: https://www.linkedin.com/in/%E5%A7%9D%E6%B3%93-%E5%90%91-320b01183?trk=chatin_wnc_redirect_pubprofile&ctx=cnpartner
-    
+    - icon: fa-github fa-lg
+      href: http://github.com/ShuhongXiang/
 output:
   html_document:
       theme: simplex
