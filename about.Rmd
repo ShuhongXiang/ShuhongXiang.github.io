@@ -9,3 +9,4 @@ output:
 # Games
 
 I really love the TRPG games based on Call of Cthulhu, but there is no much people know them :(
+
